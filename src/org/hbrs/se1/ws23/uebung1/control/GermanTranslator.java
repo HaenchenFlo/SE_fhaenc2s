@@ -9,8 +9,12 @@ public class GermanTranslator implements Translator {
 	 */
 	public String translateNumber( int number ) {
 		// [ihr Source Code aus Übung 1-2]
+		if(number < 1 || number > 10) {
+			throw new IllegalArgumentException("Übersetzung der Zahl " +number + " nicht möglich ("+ version +")");
+		}
+		String[] zahlen = {"eins","zwei","drei","vier","fünf","sechs","sieben","acht","neun","zehn"};
 
-		return "null";
+		return zahlen[number - 1];
 	}
 
 	/**
