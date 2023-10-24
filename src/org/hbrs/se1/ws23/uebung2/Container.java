@@ -15,7 +15,7 @@ public class Container {
     public String deleteMember(Integer id) {
         for (int i = 0; i < Memberlist.size(); i++) {
             if (Memberlist.get(i).getID() == id) {
-                return null;
+                return "";
             }
         }
         return "FEHLER!!! Member mit der ID nicht gefunden";
