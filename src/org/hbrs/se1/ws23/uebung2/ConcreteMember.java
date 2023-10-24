@@ -12,4 +12,5 @@ public class ConcreteMember implements Member {
     public String toString() {
         return "Member (ID = " + id + ")";
     }
+
 }
