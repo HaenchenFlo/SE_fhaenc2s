@@ -61,7 +61,7 @@ public class ContainerTest {
         assertThrows(ContainerException.class, () -> container.addMember(member2));
         container.deleteMember(1);
         container.deleteMember(2);
-        assertEquals("FEHLER!!! Member mit der ID nicht gefunden", container.deleteMember(3));
-        assertEquals("FEHLER!!! Member mit der ID nicht gefunden", container.deleteMember(4));
+        assertEquals("FEHLER!!! Member mit der ID nicht gefunden", container.deleteMember(1));
+        assertEquals("FEHLER!!! Member mit der ID nicht gefunden", container.deleteMember(2));
     }
 }

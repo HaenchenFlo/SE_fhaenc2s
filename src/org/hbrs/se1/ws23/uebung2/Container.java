@@ -14,7 +14,7 @@ public class Container {
 
     public String deleteMember(Integer id) {
         for (int i = 0; i < Memberlist.size(); i++) {
-            if (Memberlist.get(i).getID() == id) {
+            if (Memberlist.get(i).getID().equals(id)) {
                 return "";
             }
         }
